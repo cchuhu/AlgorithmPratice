@@ -18,17 +18,23 @@ public class tencent {
         //开两层循环遍历累加数组
         for (int i = 0; i < l; i++) {
             for (int j = 0; j < w; j++) {
-                //如果是第一行,则直接跳出
-                if (i == 0) {
-                    break;
+                //原点不变
+                if (i == 0 && j == 0) {
+                    table[i][j] = table[i][j];
                 } else {
-                    //除去每一行的第一个数字,因为第一个数字的值只有一个来源
-                    if (j == 0) {
-                        table[i][j] = table[i][j] + table[i - 1][j];
+                    //如果是第一行,则最大值只有可能来自左边
+                    if (i == 0) {
+                        table[i][j] = table[i][j] + table[i][j - 1];
                     } else {
-                        table[i][j] = table[i][j] + Max(table[i - 1][j], table[i][j - 1]);
+                        //除去每一行的第一个数字,因为第一个数字的值只有一个来源
+                        if (j == 0) {
+                            table[i][j] = table[i][j] + table[i - 1][j];
+                        } else {
+                            table[i][j] = table[i][j] + Max(table[i - 1][j], table[i][j - 1]);
+                        }
                     }
                 }
+
             }
         }
 
@@ -48,7 +54,7 @@ public class tencent {
 
     public static void main(String[] args) {
         int[][] table = {
-                {0, 2, 1, 3}, {1, 0, 1, 1}, {5, 0, 3, 1}, {5, 1, 0, 0}
+                {0, 2, 11, 13}, {1, 0, 1, 1}, {5, 0, 3, 1}, {5, 1, 0, 0}
         };
         int maxValue = Count(table);
         for (int i = 0; i < table.length; i++) {
