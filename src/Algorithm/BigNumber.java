@@ -4,7 +4,7 @@ import java.math.BigInteger;
 
 /**
  * @author Huhu
- * @version 创建时间：Mar 26, 2016 8:54:26 PM 类说明 大数相乘
+ * @version 创建时间：Mar 26, 2016 8:54:26 PM 类说明 大数相乘的类的使用
  */
 public class BigNumber {
 	public static void main(String[] args) {
