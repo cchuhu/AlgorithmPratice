@@ -2,7 +2,7 @@ package Algorithm;
 
 /**
  * @author Huhu
- * @version 创建时间：Mar 26, 2016 8:12:08 PM 类说明 约瑟夫环
+ * @version 创建时间：Mar 26, 2016 8:12:08 PM 类说明 约瑟夫环的java实现
  */
 public class joseph {
 	/**
