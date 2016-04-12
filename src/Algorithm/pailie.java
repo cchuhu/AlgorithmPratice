@@ -2,7 +2,7 @@ package Algorithm;
 
 /**
  * @author Huhu
- * @version 创建时间：Mar 26, 2016 9:44:00 PM 类说明 输出全排列
+ * @version 创建时间：Mar 26, 2016 9:44:00 PM 类说明 递归输出全排列
  */
 public class pailie {
 
