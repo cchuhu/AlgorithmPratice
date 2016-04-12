@@ -3,14 +3,12 @@ package Algorithm;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import javax.rmi.CORBA.Tie;
-
 /** 
  * @author Huhu
  * @version 创建时间：Apr 8, 2016 7:50:57 PM 
  * 类说明 动态规划问题
  */
-public class Main {
+public class JD2 {
 	int n;//糖果数量
 	int v;//货车容量
 static int [] ti;
