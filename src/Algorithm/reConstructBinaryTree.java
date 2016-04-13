@@ -40,7 +40,7 @@ public class reConstructBinaryTree {
     public static TreeNode ConstructBinaryTrees(int[] pre, int preleft, int preright, int[] in, int inleft, int inright) {
 
         //如果左右子树的边界未重合
-        if (preleft > preright && inleft > inright) {
+        if (preleft > preright || inleft > inright) {
             return null;
         }
         TreeNode root = new TreeNode(pre[preleft]);
