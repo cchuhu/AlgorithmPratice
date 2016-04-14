@@ -5,7 +5,7 @@ import java.util.LinkedList;
 
 /**
  * @author Huhu
- * @version 创建时间：Apr 10, 2016 1:31:37 PM 类说明 二叉树的基本操作
+ * @version 创建时间：Apr 10, 2016 1:31:37 PM 类说明 二叉树的基本操作.
  */
 public class TreeBasic {
 	public class BinaryTree {
